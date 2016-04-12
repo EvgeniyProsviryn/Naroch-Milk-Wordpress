@@ -1,0 +1,328 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; }
+
+.hidden {
+  display: none; }
+
+.loader{
+   text-align:center;
+   height:50px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: grey;
+    
+}
+
+.loader-icon{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    font-size: 46px;
+    margin-left: -20px;
+    margin-top: -30px;
+    animation: rotate 2s infinite linear;
+}
+
+.Load-text{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: -32px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+  
+  0%{
+    transform:rotate(0deg);
+  }
+  
+  
+  100%{
+    transform:rotate(360deg);
+  }
+  
+}
+
+.textImg{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size:40px; 
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -190px;
+    top:50%;
+    margin-top: -150px;
+    text-shadow: 0px 0px 3px black;
+    font-family: 'Lobster';
+    border-bottom: 3px solid white;
+    padding:2px;
+}
+.col-md-12.wrapper{
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-md-12.image{
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    min-height: 640px;
+    height: 720px;
+}
+
+.col-md-12.filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.4);
+    margin: 0px;
+    padding: 0px;
+}
+
+.log{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+    font-size: 18px;
+    font-family: 'Lobster';
+    padding: 20px;
+    margin-left: 38px;
+    margin-top: 5px;
+    display: block;
+}
+
+span.icona{
+     background: url(../images/drink.svg) no-repeat;
+     background-size: cover;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     z-index: 10;
+     display: block;
+     margin: 20px;
+}
+
+.top-line,.middle-line,.bottom-line{
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin-top: 5px;
+    transition: all .3s;
+    box-shadow: 0px 0px 3px black;
+    
+}
+
+.top-line.active{
+    transform: rotate(45deg) translate(10px,7px);
+}
+
+.middle-line.active{
+  opacity: 0;
+}
+
+.bottom-line.active{
+     transform: rotate(-45deg) translate(6px,-2px);
+}
+
+.menu{
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    top:3%;
+    z-index: 999999;
+    transform: scale(0.9)
+}
+
+.menu-list{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    background: rgba(0,0,0,.9);
+    display: none;
+    font-weight: bold;
+}
+
+.menu-list.out{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    display: block;
+    z-index: 9999;
+}
+
+
+
+.menu-list ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    top:50%;
+    margin-top: -110px;
+    left: 50%;
+    margin-left: -145px;
+    font-family: 'Lobster';
+}
+
+.menu-list a{
+    color: white;
+    transition: all .5s;
+}
+
+.menu-list a:hover{
+    text-shadow: 0px 0px 5px white;
+}
+
+.menu-list ul li{
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 99;
+    letter-spacing: 2px;
+}
+
+
+
+.menu-list>ul>li>a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-list>ul>li>a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.about{
+    font-size: 24px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.aboutText{
+    font-size: 36px;
+    color: orange;
+    font-weight: bold;
+}
+
+.aboutTextFull{
+    margin-top: 10px;
+    
+}
+
+.fanc{
+  margin-left: 50px;
+}
+
+.photo-img{
+    height: 200px;
+    margin-top: 50px;
+}
+
+img.img-thumbnail{
+    height: 200px;
+}
+
+.photo-img2.img.img-thumbnail{
+    height: 400px;
+    
+}
+
+.footer{
+    height: 70px;
+    background: #333;
+    margin-top: 50px;   
+    
+}
+
+.footText>a{
+    color: orange;
+    cursor: pointer;
+    
+}
+
+.footText>a:hover{
+    color: orange;
+}
+
+.footText{
+    color: white;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    
+}
+
+.copy{
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top:50%;
+    margin-top: -10px;
+    
+}
+
+.Products{
+    margin-top: 30px;
+}
+
+.prZgl{
+    float: left;
+    color: orange;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-top: 80px;
+    width: 310px;
+}
+
+.prTxt{
+    float: left;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 120px;
+}
+
+.icon2{
+    background: url(../images/animal.svg);
+    background-size: cover;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -110px;
+    z-index: 10;
+}
